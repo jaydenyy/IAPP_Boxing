@@ -1,0 +1,131 @@
+/*General*/
+.exo-2-<uniquifier> {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+body {
+    background: #0D0D0D;
+    color: #FFFFFF;
+}
+
+/*Header*/
+header {
+    background: #1A1A1A;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 3px solid #E1261C;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+header h2 {
+    color: #E1261C;
+    margin-bottom: 5px;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 2px solid #2D2D2D;
+}
+
+/*Navbar*/
+
+.navbar {
+    background: #111111;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links > li > a {
+    display: block;
+    padding: 18px 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.nav-links > li > a:hover {
+    background: #E1261C;
+}
+
+/*Dropdown*/
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+
+    background: #1A1A1A;
+    border-top: 4px solid #E1261C;
+    list-style: none;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 14px 18px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    background: #E1261C;
+    padding-left: 25px;
+}
+
+/*Show dropdown*/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.25s;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
