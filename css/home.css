@@ -7,7 +7,7 @@
 
 .hero {
     text-align: center;
-    padding: 88px 0;
+    padding: 100px 0;
     background: url('../assets/images/homeCover.jpg') no-repeat center center;
     background-size: cover;
 }
