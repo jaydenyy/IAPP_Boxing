@@ -1,4 +1,3 @@
-/*General*/
 .exo-2-<uniquifier> {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
@@ -19,7 +18,6 @@ body {
     color: #FFFFFF;
 }
 
-/*Header*/
 header {
     background: #1A1A1A;
     padding-top: 20px;
@@ -48,8 +46,6 @@ header hr {
     border-top: 2px solid #2D2D2D;
 }
 
-/*Navbar*/
-
 .navbar {
     background: #111111;
     box-shadow: 0 3px 10px rgba(0,0,0,0.5);
@@ -77,8 +73,6 @@ header hr {
 .nav-links > li > a:hover {
     background: #E1261C;
 }
-
-/*Dropdown*/
 
 .dropdown-menu {
     display: none;
@@ -110,8 +104,6 @@ header hr {
     background: #E1261C;
     padding-left: 25px;
 }
-
-/*Show dropdown*/
 
 .dropdown:hover .dropdown-menu {
     display: block;
