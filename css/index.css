@@ -72,44 +72,28 @@ body{
 .explore-btn{
     width:200px;
     text-decoration:none;
-
     background:#c8102e;
-
     color:white;
-
     padding:18px 20px;
-
     border-radius:50px;
-
     font-size:1rem;
     font-weight:bold;
-
     letter-spacing:2px;
-
     transition:.3s;
-
     margin-left:20px;
 }
 
 .join-btn{
     width:200px;
     text-decoration:none;
-
     background:#4A4A4A   ;
-
     color:white;
-
     padding:18px 20px;
-
     border-radius:50px;
-
     font-size:1rem;
     font-weight:bold;
-
     letter-spacing:2px;
-
     transition:.3s;
-
     margin-left:20px;
 }
 

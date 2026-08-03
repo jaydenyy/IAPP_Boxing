@@ -1,0 +1,45 @@
+.display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.02;
+}
+
+.hero {
+    text-align: center;
+    padding: 88px 0;
+    background: url('../assets/images/homeCover.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero h2.display {
+    font-size: clamp(30px, 4.5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: white;
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.join-btn{
+    width:200px;
+    text-decoration:none;
+    background:#c8102e;
+    color:white;
+    padding:18px 20px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:bold;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.join-btn:hover{
+    background:#ff1f3d;
+}

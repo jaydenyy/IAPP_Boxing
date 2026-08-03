@@ -249,48 +249,6 @@ main {
     color: #BDBDBD;
 }
 
-.about-cta {
-    text-align: center;
-    padding: 88px 0;
-}
-
-.about-cta h2.display {
-    font-size: clamp(30px, 4.5vw, 48px);
-    margin-bottom: 20px;
-}
-
-.about-cta h2.display em {
-    font-style: normal;
-    color: #E1261C;
-}
-
-.about-cta p {
-    color: #BDBDBD;
-    max-width: 480px;
-    margin: 0 auto;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
-}
-
-.about-btn {
-    display: inline-block;
-    margin-top: 32px;
-    padding: 15px 34px;
-    background: #E1261C;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.25s;
-}
-
-.about-btn:hover {
-    background: #c01f16;
-}
-
 @media (max-width: 780px) {
     .mission {
         grid-template-columns: 1fr;
