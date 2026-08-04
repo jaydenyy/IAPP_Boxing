@@ -1,0 +1,46 @@
+.equipment {
+    padding: 70px 0;
+}
+.equipment-title{
+    text-align:center;
+    color:#ce2020;
+    font-size:60px;
+}
+.equipment-text{
+    text-align:center;
+    color:#BDBDBD;
+    margin-bottom:40px;
+    font-size:30px; 
+}
+.equipment-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+.card{
+    background-color:#1A1A1A;
+    border:1px solid rgba(255,255,255,0.08);
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-20px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+.card img{
+    width: 400px;
+    height:200px;
+    object-fit:cover;
+}
+.card h3{
+    color:#E1261C;
+    margin:15px 0 10px;
+}
+.card p{
+    color:#BDBDBD;
+    line-height:1.6;
+}
+
+
