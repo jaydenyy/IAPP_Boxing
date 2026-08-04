@@ -26,6 +26,13 @@ header {
     border-bottom: 3px solid #E1261C;
 }
 
+a {
+    color: #E1261C;
+    text-decoration: none;
+}
+
+
+
 header h1 {
     color: #FFFFFF;
     font-size: 2rem;
