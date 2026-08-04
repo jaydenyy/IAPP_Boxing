@@ -1,0 +1,129 @@
+.exo-2-faq {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.faq-hero {
+    text-align: center;
+    padding: 60px 30px 40px;
+    background: #1A1A1A;
+    border-bottom: 3px solid #E1261C;
+}
+
+.faq-hero h1 {
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.faq-hero p {
+    color: #BDBDBD;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 30px 70px;
+}
+
+.faq-category-title {
+    color: #E1261C;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    letter-spacing: 0.5px;
+}
+
+.faq-category-title:first-of-type {
+    margin-top: 0;
+}
+
+.faq-item {
+    background: #1A1A1A;
+    border: 1px solid #2D2D2D;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.faq-item:hover {
+    border-color: #E1261C;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: "+";
+    color: #E1261C;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 15px;
+    flex-shrink: 0;
+    transition: transform 0.25s;
+}
+
+.faq-item[open] .faq-question::after {
+    content: "+";
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 22px 20px;
+    color: #BDBDBD;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.faq-contact-cta {
+    text-align: center;
+    background: #1A1A1A;
+    border: 1px solid #2D2D2D;
+    border-radius: 8px;
+    padding: 35px 25px;
+    margin-top: 50px;
+}
+
+.faq-contact-cta h3 {
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.faq-contact-cta p {
+    color: #BDBDBD;
+    margin-bottom: 18px;
+}
+
+.faq-contact-cta a {
+    display: inline-block;
+    background: #E1261C;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.faq-contact-cta a:hover {
+    background: #ff3b2f;
+}
