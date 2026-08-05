@@ -1,0 +1,13 @@
+/* The Guide page previously linked no page-specific stylesheet at
+   all, so its heading and intro text were completely unstyled. */
+
+.guide-intro {
+    padding: 48px 0px 32px;
+}
+
+.guide-intro p {
+    color: var(--color-text-muted);
+    max-width: 640px;
+    line-height: 1.7;
+    margin-top: 12px;
+}

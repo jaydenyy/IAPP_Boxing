@@ -1,0 +1,242 @@
+/* =================================================================
+   SMASH CLUB — GLOBAL STYLESHEET
+   -----------------------------------------------------------------
+   This file holds the reset, base typography, color variables, and
+   every class that was previously repeated (identically or almost
+   identically) across two or more CSS files:
+     - reset + body + link defaults        (was duplicated in
+       navbar.css and contact-us.css)
+     - .site-header / .site-brand / etc.    (was inline styles,
+       copy-pasted in every single HTML file)
+     - .page-container                      (was a bare "main"
+       selector duplicated in about.css and hall-of-fame.css)
+     - .eyebrow                             (was duplicated as
+       .eyebrow in join-us.css/hall-of-fame.css and .about-eyebrow
+       in about.css)
+     - .section-tag                        (duplicated/inconsistent
+       in about.css and join-us.css)
+     - .display                            (duplicated in home.css,
+       about.css and hall-of-fame.css, each slightly different)
+     - .card                               (was only in
+       Equipment.css but referenced unstyled on the Guide page)
+     - .btn / .btn-primary / .btn-secondary (three near-identical
+       pill buttons in home.css and index.css)
+
+   Load this file FIRST, before navbar.css / footer.css / any
+   page-specific stylesheet.
+   ================================================================= */
+
+:root {
+    --color-bg: #0D0D0D;
+    --color-surface: #1A1A1A;
+    --color-border: #2D2D2D;
+    --color-border-subtle: rgba(255, 255, 255, 0.08);
+    --color-red: #E1261C;
+    --color-red-hover: #C61D17;
+    --color-text: #FFFFFF;
+    --color-text-muted: #BDBDBD;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-red);
+    text-decoration: none;
+}
+
+/* ---------- Site header bar ---------- */
+
+.site-header {
+    background: var(--color-surface);
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 3px solid var(--color-red);
+}
+
+.site-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-brand-logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.site-brand h1 {
+    color: var(--color-text);
+    font-size: 32px;
+}
+
+.site-tagline {
+    flex: 1;
+    text-align: center;
+}
+
+.site-tagline h2 {
+    color: var(--color-red);
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.site-tagline p {
+    font-size: 16px;
+}
+
+.site-header hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 2px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+    .site-brand-logo {
+        width: 70px;
+        height: 70px;
+        margin-left: 0px;
+    }
+
+    .site-tagline {
+        text-align: left;
+    }
+}
+
+/* ---------- Shared content container ---------- */
+
+.page-container {
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 32px;
+}
+
+/* ---------- Eyebrow label ---------- */
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+}
+
+.eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--color-red);
+    border-radius: 50%;
+}
+
+/* ---------- Section tag ---------- */
+
+.section-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-red);
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* ---------- Display heading ---------- */
+
+.display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.05;
+}
+
+/* ---------- Reusable dark card ---------- */
+
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    color: var(--color-red);
+    margin: 15px 0px 10px;
+}
+
+.card p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* ---------- Pill buttons ---------- */
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 18px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--color-red);
+}
+
+.btn-primary:hover {
+    background: var(--color-red-hover);
+    transform: translateY(-4px);
+}
+
+.btn-secondary {
+    background: #4A4A4A;
+}
+
+.btn-secondary:hover {
+    background: #666666;
+    transform: translateY(-4px);
+}
