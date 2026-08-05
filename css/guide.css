@@ -6,7 +6,34 @@
 
 .guide-intro p {
     color: var(--color-text-muted);
-    max-width: 640px;
     line-height: 1.7;
     margin-top: 12px;
+}
+.all-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.card {
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-border-subtle);
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.card h2{
+    color:red;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+.card ul{
+    padding-left: 20px;
+}
+.card ul li{
+    margin:9px 0;
+    text-align:left;
 }
