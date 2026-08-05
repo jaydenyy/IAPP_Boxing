@@ -1,94 +1,44 @@
-.exo-2-<uniquifier> {
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Exo 2", sans-serif;
-}
-
-body{
-    height:100vh;
+body {
+    height: 100vh;
     background:
-    linear-gradient(
-        rgba(0,0,0,.70),
-        rgba(0,0,0,.75)
-    ),
-    url("../assets/images/index.jpg") no-repeat center center;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    overflow:hidden;
+        linear-gradient(
+            rgba(0, 0, 0, .70),
+            rgba(0, 0, 0, .75)
+        ),
+        url("../assets/images/index.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
-.overlay{
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.content{
-    text-align:center;
-    color:white;
+.content {
+    text-align: center;
+    color: white;
 }
 
-.content h1{
-    font-size:100px;
-    font-weight:900;
-    margin-bottom:15px;
+.content h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 15px;
 }
 
-.content h2{
-    font-size:30px;
-    font-weight:500;
-    margin-bottom:25px;
+.content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 25px;
 }
 
-.content p{
-    font-size:25px;
-    color:#d5d5d5;
-    margin-bottom:50px;
-}
-
-.explore-btn{
-    width:200px;
-    text-decoration:none;
-    background:#c8102e;
-    color:white;
-    padding:18px 20px;
-    border-radius:50px;
-    font-size:1rem;
-    font-weight:bold;
-    transition:.3s;
-    margin-left:20px;
-}
-
-.join-btn{
-    width:200px;
-    text-decoration:none;
-    background:#4A4A4A   ;
-    color:white;
-    padding:18px 20px;
-    border-radius:50px;
-    font-size:1rem;
-    font-weight:bold;
-    transition:.3s;
-    margin-left:20px;
-}
-
-.explore-btn:hover{
-    background:#ff1f3d;
-    transform:translateY(-4px);
-}
-
-.join-btn:hover{
-    background:#666666;
-    transform:translateY(-4px);
+.content p {
+    font-size: 25px;
+    color: #D5D5D5;
+    margin-bottom: 50px;
 }

@@ -1,0 +1,13 @@
+/* gallery.html was uploaded as a completely empty file. This gives
+   it the same header/nav/footer shell as every other page instead
+   of a blank, broken-looking page in the nav. */
+
+.gallery-placeholder {
+    padding: 60px 0px;
+}
+
+.gallery-placeholder p {
+    color: var(--color-text-muted);
+    margin-top: 16px;
+    max-width: 620px;
+}

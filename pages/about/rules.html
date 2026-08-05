@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <link rel="icon" type="image/png" href="../../assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,44 +10,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules</title>
+    <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/about.css">
 </head>
- 
+
 <body>
-    <header>
-        <table style="width: 100%;">
-            <tr>
-                <td style="width: 40%;">
-                    <div style="display: flex; align-items: center;">
-                        <img src="../../assets/icons/clubIcon.png"
-                            style="width: 100px; height: 100px; margin-right: 10px; margin-left: 30px;">
-                        <h1>Smash Club</h1>
-                    </div>
-                </td>
-                <td style="width: 60%;" align="center">
-                    <h2>Boxing Club of APU</h2>
-                    Be a Fighter Today! <br>
-                </td>
-            </tr>
-        </table>
+    <header class="site-header">
+        <div class="site-header-row">
+            <div class="site-brand">
+                <img src="../../assets/icons/club-icon.png" alt="Smash Club logo" class="site-brand-logo">
+                <h1>Smash Club</h1>
+            </div>
+            <div class="site-tagline">
+                <h2>Boxing Club of APU</h2>
+                <p>Be a Fighter Today!</p>
+            </div>
+        </div>
         <hr>
     </header>
- 
+
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="../home.html">Home</a></li>
- 
+
             <li class="dropdown">
                 <a href="#">About</a>
                 <ul class="dropdown-menu">
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="coach.html">Coach</a></li>
-                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="../about/about-us.html">About Us</a></li>
+                    <li><a href="../about/coach.html">Coach</a></li>
+                    <li><a href="../about/rules.html">Rules</a></li>
                 </ul>
             </li>
- 
+
             <li class="dropdown">
                 <a href="#">Activities</a>
                 <ul class="dropdown-menu">
@@ -56,7 +52,7 @@
                     <li><a href="../activities/competition.html">Competition</a></li>
                 </ul>
             </li>
- 
+
             <li class="dropdown">
                 <a href="#">Membership</a>
                 <ul class="dropdown-menu">
@@ -65,7 +61,7 @@
                     <li><a href="../membership/hall-of-fame.html">Hall of Fame</a></li>
                 </ul>
             </li>
- 
+
             <li class="dropdown">
                 <a href="#">Resources</a>
                 <ul class="dropdown-menu">
@@ -73,7 +69,7 @@
                     <li><a href="../resources/guide.html">Guide</a></li>
                 </ul>
             </li>
- 
+
             <li class="dropdown">
                 <a href="#">Media</a>
                 <ul class="dropdown-menu">
@@ -81,7 +77,7 @@
                     <li><a href="../media/highlights.html">Highlights</a></li>
                 </ul>
             </li>
- 
+
             <li class="dropdown">
                 <a href="#">Help</a>
                 <ul class="dropdown-menu">
@@ -91,24 +87,24 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="page-container">
         <section class="video-section">
-       <div class="video-frame">
-    <video id="myVideo" autoplay muted playsinline loop controls>
-        <source src="/assets/videos/The Rules of Boxing - EXPLAINED! - Ninh Ly (1080p).mp4" type="video/mp4">
-        Your browser does not support embedded video.
-    </video>
-    <button id="unmuteBtn" onclick="document.getElementById('myVideo').muted = false; this.style.display='none';">
-        🔇 Tap for sound
-    </button>
-</div>
+            <div class="video-frame">
+                <video id="my-video" autoplay muted playsinline loop controls>
+                    <source src="../../assets/videos/rules-of-boxing-explained-ninh-ly.mp4" type="video/mp4">
+                    Your browser does not support embedded video.
+                </video>
+                <button id="unmute-btn" onclick="document.getElementById('my-video').muted = false; this.style.display='none';">
+                    🔇 Tap for sound
+                </button>
+            </div>
         </section>
- 
+
         <section class="timeline">
             <span class="section-tag">In The Gym</span>
             <h2 class="display">The rules</h2>
             <p>Non-negotiable for every session, every fighter, no exceptions.</p>
- 
+
             <div class="tl-row">
                 <div class="tl-year">01</div>
                 <div>
@@ -117,7 +113,7 @@
                         sparring. No wraps, no gloves, no exceptions.</p>
                 </div>
             </div>
- 
+
             <div class="tl-row">
                 <div class="tl-year">02</div>
                 <div>
@@ -126,7 +122,7 @@
                         session and setting the intensity level.</p>
                 </div>
             </div>
- 
+
             <div class="tl-row">
                 <div class="tl-year">03</div>
                 <div>
@@ -135,7 +131,7 @@
                         proving a point against a less experienced partner.</p>
                 </div>
             </div>
- 
+
             <div class="tl-row">
                 <div class="tl-year">04</div>
                 <div>
@@ -144,7 +140,7 @@
                         attitude at the door. Smash Club is a discipline-first environment.</p>
                 </div>
             </div>
- 
+
             <div class="tl-row">
                 <div class="tl-year">05</div>
                 <div>
@@ -153,8 +149,8 @@
                         hurt. Never push through a head injury.</p>
                 </div>
             </div>
- 
-            <div class="values-grid" style="margin-top: 40px;">
+
+            <div class="values-grid">
                 <div class="value-card">
                     <div class="value-mark"></div>
                     <h4>Discipline first</h4>
@@ -176,7 +172,7 @@
             </div>
         </section>
     </main>
- 
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -186,24 +182,24 @@
                     Train hard, compete with pride, and build a stronger community.
                 </p>
             </div>
- 
+
             <div class="footer-section">
                 <h3>Contact Us</h3>
- 
+
                 <p>
                     Asia Pacific University<br>
                     Jalan Teknologi 5,<br>
                     Technology Park Malaysia,<br>
                     57000 Kuala Lumpur
                 </p>
- 
+
                 <p>📞 +60 12-345 6789</p>
                 <p>✉ smashclub@apu.edu.my</p>
             </div>
- 
+
             <div class="footer-section">
                 <h3>Follow Us</h3>
- 
+
                 <div class="social-icons">
                     <a href="#" target="_blank" title="Facebook"><img class="social-icon" src="../../assets/icons/facebook.png" alt="Facebook"></a>
                     <a href="#" target="_blank" title="Instagram"><img class="social-icon" src="../../assets/icons/instagram.png" alt="Instagram"></a>
@@ -212,11 +208,11 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="footer-bottom">
             © 2026 Smash Club • Asia Pacific University • All Rights Reserved
         </div>
     </footer>
 </body>
- 
+
 </html>

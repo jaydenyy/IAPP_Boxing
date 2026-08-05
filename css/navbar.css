@@ -1,60 +1,11 @@
-.exo-2-<uniquifier> {
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Exo 2", sans-serif;
-}
-
-body {
-    background: #0D0D0D;
-    color: #FFFFFF;
-}
-
-header {
-    background: #1A1A1A;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-bottom: 3px solid #E1261C;
-}
-
-a {
-    color: #E1261C;
-    text-decoration: none;
-}
-
-
-header h1 {
-    color: #FFFFFF;
-    font-size: 2rem;
-}
-
-header h2 {
-    color: #E1261C;
-    margin-bottom: 5px;
-}
-
-header img {
-    border-radius: 50%;
-}
-
-header hr {
-    margin-top: 20px;
-    border: none;
-    border-top: 2px solid #2D2D2D;
-}
+/* Navbar-specific styles only.
+   The reset, body defaults, link color, and the site header bar
+   (logo + club name + tagline) now live in header.css, since they
+   were general/shared styling rather than navbar styling. */
 
 .navbar {
     background: #111111;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav-links {
@@ -77,53 +28,42 @@ header hr {
 }
 
 .nav-links > li > a:hover {
-    background: #E1261C;
+    background: var(--color-red);
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     min-width: 210px;
-
-    background: #1A1A1A;
-    border-top: 4px solid #E1261C;
+    background: var(--color-surface);
+    border-top: 4px solid var(--color-red);
     list-style: none;
-
-    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
-
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
     z-index: 1000;
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 14px 18px;
-
-    color: #FFFFFF;
-    text-decoration: none;
-
-    transition: 0.2s;
-}
-
-.dropdown-menu li a:hover {
-    background: #E1261C;
-    padding-left: 25px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu {
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: 0.25s;
 }
 
+.dropdown-menu li a {
+    display: block;
+    padding: 14px 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    background: var(--color-red);
+    padding-left: 25px;
+}
+
 .dropdown:hover .dropdown-menu {
+    display: block;
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateY(0px);
 }
