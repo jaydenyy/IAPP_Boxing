@@ -1,8 +1,4 @@
-/* Renamed from Equipment.css: equipment.html links to "equipment.css"
-   (lowercase), so the mismatched capital-E filename was a broken
-   stylesheet on case-sensitive servers. .card / .card:hover / .card h3
-   / .card p moved to header.css since they're shared with the Guide
-   page. */
+
 
 .equipment {
     padding: 70px 0px;
