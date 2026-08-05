@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../../assets/icons/favicon.png">
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us</title>
+    <title>Boxing Equipment</title>
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/join-us.css">
+    <link rel="stylesheet" href="../../css/equipment.css">
 </head>
 
 <body>
@@ -92,112 +92,46 @@
         </ul>
     </nav>
 
-    <main class="join-container">
-        <div class="join-image">
-            <img src="../../assets/images/join-us.jpg" alt="Boxing Training">
-        </div>
-
-        <section class="join-form">
-            <div class="eyebrow"><span class="dot"></span>Smash Club Membership</div>
-            <h1>Join Smash Club</h1>
-            <p class="intro">
-                Complete the registration form below. Our committee will review
-                your application and contact you within 2 working days.
-            </p>
-            <form>
-                <div class="form-card">
-                    <h2>Personal Information</h2>
-                    <div class="form-grid">
-                        <div class="input-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" placeholder="John Smith" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" required>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label>Gender</label>
-                        <div class="radio-group">
-
-                            <label>
-                                <input type="radio" name="gender" required>
-                                Male
-                            </label>
-
-                            <label>
-                                <input type="radio" name="gender">
-                                Female
-                            </label>
-
-                            <label>
-                                <input type="radio" name="gender">
-                                Prefer not to say
-                            </label>
-                        </div>
-                    </div>
+    <main>
+        <div class="equipment">
+            <div class="eyebrow"><span class="dot"></span>Essentials</div>
+            <p class="equipment-title"><strong>Boxing Equipment</strong></p>
+            <p class="equipment-text">
+                Choose the right equipment for your safe and effective boxing training.</p>
+            <div class="equipment-grid">
+                <div class="card">
+                    <img src="../../assets/images/boxing gloves.png" alt="Boxing Gloves">
+                    <h3>Boxing Gloves</h3>
+                    <p>Protect your hand and wrists during training and sparring.</p>
                 </div>
-                <div class="form-card">
-                    <h2>Contact Information</h2>
-                    <div class="input-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="john@apu.edu.my" required>
-                    </div>
-
-                    <div class="input-group">
-
-                        <label for="contact">
-                            Emergency Contact Person & Phone
-                        </label>
-                        <input type="text" id="contact" placeholder="Jane (Mother) - 0123456789" required>
-                    </div>
+                <div class="card">
+                    <img src="../../assets/images/hand wraps.png" alt="Hand Wraps">
+                    <h3>Hand Wraps</h3>
+                    <p>Provide support and protection for your hands and wrists.</p>
                 </div>
-
-                <div class="form-card">
-                    <h2>Training Information</h2>
-                    <div class="input-group">
-                        <label for="level">Current Experience Level</label>
-                        <select id="level" required>
-                            <option value="">Select your level</option>
-                            <option>Beginner</option>
-                            <option>Intermediate</option>
-                            <option>Advanced</option>
-                            <option>Competitive Athlete</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label for="program">Program of Interest</label>
-                        <select id="program" required>
-                            <option value="">Choose a Program</option>
-                            <option>Beginner Training</option>
-                            <option>Competitive Team</option>
-                            <option>Fitness Boxing</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label for="medical">
-                            Medical Conditions / Allergies
-                        </label>
-                        <textarea id="medical" rows="4"
-                            placeholder="Please mention any injuries or medical conditions..."></textarea>
-                    </div>
+                <div class="card">
+                    <img src="../../assets/images/head gear.png" alt="Head Gear">
+                    <h3>Head Gear</h3>
+                    <p>Protect your heand and face during tarining and sparring.</p>
                 </div>
-                <div class="checkbox-group">
-                    <label>
-                        <input type="checkbox" required>
-                        I agree to follow all <a href="../about/rules.html" target="_blank">Smash Club rules, safety regulations,
-                        and training guidelines.</a>
-                    </label>
+                <div class="card">
+                    <img src="../../assets/images/mouth guard.png" alt="Mouth Guard">
+                    <h3>Mouth Guard</h3>
+                    <p>Protect your teeth and jaw during training and sparring.</p>
                 </div>
-
-                <button type="submit" class="submit-btn">
-                    Join Smash Club
-                </button>
-            </form>
-        </section>
+                <div class="card">
+                    <img src="../../assets/images/punching bag.png" alt="Punching Bag">
+                    <h3>Punching Bag</h3>
+                    <p>Improve your punching technique and build strength with a punching bag.</p>
+                </div>
+                <div class="card">
+                    <img src="../../assets/images/boxing shoes.png" alt="Boxing Shoes">
+                    <h3>Boxing Shoes</h3>
+                    <p>Enhance footwork, balance, and stability during training and sparring.</p>
+                </div>
+            </div>
     </main>
-
+    
     <footer class="footer">
         <div class="footer-container">
 

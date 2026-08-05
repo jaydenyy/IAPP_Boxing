@@ -8,7 +8,11 @@
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: url('../assets/images/homeCover.jpg') no-repeat center center;
+    background: 
+    linear-gradient(
+        rgba(0,0,0,.70),
+        rgba(0,0,0,.75)
+    ),url('../assets/images/homeCover.jpg') no-repeat center center;
     background-size: cover;
 }
 

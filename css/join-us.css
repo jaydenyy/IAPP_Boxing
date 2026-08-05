@@ -21,6 +21,24 @@
     margin:10px 0;
 }
 
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-bottom: 24px;
+}
+
+.eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    background: #E1261C;
+    border-radius: 50%;
+}
+
 .section-tag{
     color:#E1261C;
     font-weight:bold;

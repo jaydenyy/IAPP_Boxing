@@ -9,10 +9,10 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/join-us.css">
+    <link rel="stylesheet" href="../../css/hall-of-fame.css">
 </head>
 
 <body>
@@ -92,109 +92,95 @@
         </ul>
     </nav>
 
-    <main class="join-container">
-        <div class="join-image">
-            <img src="../../assets/images/join-us.jpg" alt="Boxing Training">
-        </div>
+    <main>
+        <section class="hall-of-fame">
+            <div class="eyebrow">
+                <span class="dot"></span>
+                Our Legends
+            </div>
 
-        <section class="join-form">
-            <div class="eyebrow"><span class="dot"></span>Smash Club Membership</div>
-            <h1>Join Smash Club</h1>
+            <h1 class="display">Hall of Fame</h1>
+
             <p class="intro">
-                Complete the registration form below. Our committee will review
-                your application and contact you within 2 working days.
+                Celebrate the achievements of our outstanding members who have represented
+                Smash Club through dedication, discipline and excellence.
             </p>
-            <form>
-                <div class="form-card">
-                    <h2>Personal Information</h2>
-                    <div class="form-grid">
-                        <div class="input-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" placeholder="John Smith" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="dob">Date of Birth</label>
-                            <input type="date" id="dob" required>
-                        </div>
+
+            <div class="hof-grid">
+                <article class="hof-card">
+                    <div class="hof-photo">
+                        <img src="../assets/images/halloffame/member1.jpg" alt="Alex Tan">
                     </div>
-                    <div class="input-group">
-                        <label>Gender</label>
-                        <div class="radio-group">
 
-                            <label>
-                                <input type="radio" name="gender" required>
-                                Male
-                            </label>
+                    <div class="hof-content">
+                        <span class="hof-year">2026 Champion</span>
 
-                            <label>
-                                <input type="radio" name="gender">
-                                Female
-                            </label>
+                        <h3>Alex Tan</h3>
 
-                            <label>
-                                <input type="radio" name="gender">
-                                Prefer not to say
-                            </label>
+                        <p>
+                            Gold Medal - APU Intervarsity Boxing Championship.
+                            Recognized for outstanding sportsmanship and leadership.
+                        </p>
+
+                        <div class="hof-tags">
+                            <span>Middleweight</span>
+                            <span>Captain</span>
                         </div>
                     </div>
-                </div>
-                <div class="form-card">
-                    <h2>Contact Information</h2>
-                    <div class="input-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="john@apu.edu.my" required>
+                </article>
+                <article class="hof-card">
+                    <div class="hof-photo">
+                        <img src="../assets/images/halloffame/member2.jpg" alt="Sarah Lim">
                     </div>
 
-                    <div class="input-group">
-
-                        <label for="contact">
-                            Emergency Contact Person & Phone
-                        </label>
-                        <input type="text" id="contact" placeholder="Jane (Mother) - 0123456789" required>
+                    <div class="hof-content">
+                        <span class="hof-year">2025 MVP</span>
+                        <h3>Sarah Lim</h3>
+                        <p>
+                            Awarded Most Valuable Boxer after remaining undefeated
+                            throughout the university tournament season.
+                        </p>
+                        <div class="hof-tags">
+                            <span>Lightweight</span>
+                            <span>MVP</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="form-card">
-                    <h2>Training Information</h2>
-                    <div class="input-group">
-                        <label for="level">Current Experience Level</label>
-                        <select id="level" required>
-                            <option value="">Select your level</option>
-                            <option>Beginner</option>
-                            <option>Intermediate</option>
-                            <option>Advanced</option>
-                            <option>Competitive Athlete</option>
-                        </select>
+                </article>
+                <article class="hof-card">
+                    <div class="hof-photo">
+                        <img src="../assets/images/halloffame/member3.jpg" alt="Jason Lee">
                     </div>
-                    <div class="input-group">
-                        <label for="program">Program of Interest</label>
-                        <select id="program" required>
-                            <option value="">Choose a Program</option>
-                            <option>Beginner Training</option>
-                            <option>Competitive Team</option>
-                            <option>Fitness Boxing</option>
-                        </select>
+                    <div class="hof-content">
+                        <span class="hof-year">2024 Champion</span>
+                        <h3>Jason Lee</h3>
+                        <p>
+                            Represented APU nationally and secured multiple podium
+                            finishes in amateur boxing competitions.
+                        </p>
+                        <div class="hof-tags">
+                            <span>Heavyweight</span>
+                            <span>National</span>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="medical">
-                            Medical Conditions / Allergies
-                        </label>
-                        <textarea id="medical" rows="4"
-                            placeholder="Please mention any injuries or medical conditions..."></textarea>
+                </article>
+                <article class="hof-card">
+                    <div class="hof-photo">
+                        <img src="../assets/images/halloffame/member4.jpg" alt="Emily Wong">
                     </div>
-                </div>
-                <div class="checkbox-group">
-                    <label>
-                        <input type="checkbox" required>
-                        I agree to follow all <a href="../about/rules.html" target="_blank">Smash Club rules, safety regulations,
-                        and training guidelines.</a>
-                    </label>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                    Join Smash Club
-                </button>
-            </form>
+                    <div class="hof-content">
+                        <span class="hof-year">2023 Champion</span>
+                        <h3>Emily Wong</h3>
+                        <p>
+                            Outstanding contribution to the club while mentoring
+                            new members and winning multiple collegiate matches.
+                        </p>
+                        <div class="hof-tags">
+                            <span>Featherweight</span>
+                            <span>Mentor</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
