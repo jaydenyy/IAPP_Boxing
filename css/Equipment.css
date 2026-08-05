@@ -7,18 +7,13 @@
 .equipment {
     padding: 70px 0px;
 }
-
-.equipment-title {
-    text-align: center;
-    color: var(--color-red);
-    font-size: 60px;
+.text{
+    margin:25px 0px;
 }
 
-.equipment-text {
-    text-align: center;
-    color: var(--color-text-muted);
-    margin-bottom: 40px;
-    font-size: 30px;
+.equipment-title{
+    text-align:left;
+    color:white;
 }
 
 .equipment-grid {
