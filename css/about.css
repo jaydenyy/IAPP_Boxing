@@ -1,26 +1,77 @@
-/* Used by about-us.html, coach.html and rules.html.
-   .display, the bare "main" container, .about-eyebrow (now just
-   .eyebrow) and .section-tag moved to header.css since they were
-   duplicated there almost identically. */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+html,
+body {
+    background: #0D0D0D;
+    color: #FFFFFF;
+    min-height: 100%;
+}
+
+header,
+main,
+footer {
+    background: #0D0D0D;
+}
+
+header table h1,
+header table h2 {
+    color: #FFFFFF;
+}
+
+.display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.02;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
 
 .about-hero {
-    padding: 80px 0px 64px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 80px 0 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-bottom: 24px;
+}
+
+.about-eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    background: #E1261C;
+    border-radius: 50%;
 }
 
 .about-hero h2.display {
-    font-size: 50px;
+    font-size: clamp(36px, 5.5vw, 64px);
     max-width: 780px;
 }
 
 .about-hero h2.display em {
     font-style: normal;
-    color: var(--color-red);
+    color: #E1261C;
 }
 
 .about-hero p {
     max-width: 620px;
-    color: var(--color-text-muted);
+    color: #BDBDBD;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75;
@@ -31,9 +82,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
-    padding: 72px 0px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 72px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     align-items: start;
+}
+
+.section-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #E1261C;
+    display: block;
+    margin-bottom: 14px;
 }
 
 .mission h3.display {
@@ -42,55 +103,26 @@
 }
 
 .mission p {
-    color: var(--color-text-muted);
+    color: #BDBDBD;
     font-size: 15.5px;
     font-weight: 400;
     line-height: 1.8;
     margin-bottom: 14px;
 }
 
-/* ---------- Rules page video ---------- */
-
-.video-section {
-    padding: 40px 0px 0px;
-}
-
-.video-frame {
-    max-width: 900px;
-    margin: 0px auto;
-    text-align: center;
-}
-
-.video-frame video {
-    width: 100%;
-    border-radius: 12px;
-    display: block;
-}
-
-.video-frame button {
-    margin-top: 12px;
-    background: var(--color-surface);
-    color: var(--color-text);
-    border: 1px solid var(--color-red);
-    border-radius: 30px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
 .timeline {
-    padding: 72px 0px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 72px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .timeline h2.display {
-    font-size: 40px;
+    font-size: clamp(28px, 4vw, 40px);
     max-width: 640px;
     margin-bottom: 12px;
 }
 
-.timeline > p {
-    color: var(--color-text-muted);
+.timeline>p {
+    color: #BDBDBD;
     max-width: 560px;
     font-size: 15px;
     font-weight: 400;
@@ -102,48 +134,48 @@
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 32px;
-    padding: 28px 0px;
-    border-top: 1px solid var(--color-border-subtle);
+    padding: 28px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .tl-row:last-child {
-    border-bottom: 1px solid var(--color-border-subtle);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .tl-year {
     font-weight: 700;
     font-size: 26px;
-    color: var(--color-red);
+    color: #E1261C;
 }
 
 .tl-row h4 {
     font-weight: 700;
     font-size: 18px;
-    margin: 0px 0px 8px;
+    margin: 0 0 8px;
 }
 
 .tl-row p {
-    color: var(--color-text-muted);
+    color: #BDBDBD;
     font-size: 14.5px;
     font-weight: 400;
     line-height: 1.7;
-    margin: 0px;
+    margin: 0;
     max-width: 640px;
 }
 
 .values {
-    padding: 72px 0px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 72px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .values h2.display {
-    font-size: 40px;
+    font-size: clamp(28px, 4vw, 40px);
     max-width: 640px;
     margin-bottom: 12px;
 }
 
-.values > p {
-    color: var(--color-text-muted);
+.values>p {
+    color: #BDBDBD;
     max-width: 560px;
     font-size: 15px;
     font-weight: 400;
@@ -154,50 +186,50 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
-    background: var(--color-border-subtle);
-    border: 1px solid var(--color-border-subtle);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     margin-top: 40px;
 }
 
 .value-card {
-    background: var(--color-bg);
+    background: #0D0D0D;
     padding: 36px 28px;
 }
 
 .value-mark {
     width: 34px;
     height: 2px;
-    background: var(--color-red);
+    background: #E1261C;
     margin-bottom: 20px;
 }
 
 .value-card h4 {
     font-weight: 700;
     font-size: 18px;
-    margin: 0px 0px 12px;
+    margin: 0 0 12px;
 }
 
 .value-card p {
-    color: var(--color-text-muted);
+    color: #BDBDBD;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
-    margin: 0px;
+    margin: 0;
 }
 
 .coaches {
-    padding: 72px 0px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 72px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .coaches h2.display {
-    font-size: 40px;
+    font-size: clamp(28px, 4vw, 40px);
     max-width: 640px;
     margin-bottom: 12px;
 }
 
-.coaches > p {
-    color: var(--color-text-muted);
+.coaches>p {
+    color: #BDBDBD;
     max-width: 560px;
     font-size: 15px;
     font-weight: 400;
@@ -208,13 +240,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    background: var(--color-border-subtle);
-    border: 1px solid var(--color-border-subtle);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     margin-top: 40px;
 }
 
 .coach-card {
-    background: var(--color-bg);
+    background: #0D0D0D;
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +255,7 @@
     width: 100%;
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    background: var(--color-surface);
+    background: #1A1A1A;
 }
 
 .coach-photo img {
@@ -241,9 +273,9 @@
 .coach-role {
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--color-red);
+    color: #E1261C;
     display: block;
     margin-bottom: 10px;
 }
@@ -251,27 +283,27 @@
 .coach-name {
     font-weight: 700;
     font-size: 19px;
-    margin: 0px 0px 14px;
+    margin: 0 0 14px;
 }
 
 .coach-card p {
-    color: var(--color-text-muted);
+    color: #BDBDBD;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
-    margin: 0px;
+    margin: 0;
 }
 
 .stats {
-    background: var(--color-surface);
+    background: #1A1A1A;
     padding: 56px 32px;
-    margin: 0px;
-    border-bottom: 1px solid var(--color-border-subtle);
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .stats-inner {
     max-width: 1140px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
@@ -281,7 +313,7 @@
 .stat-num {
     font-weight: 800;
     font-size: 42px;
-    color: var(--color-red);
+    color: #E1261C;
     line-height: 1;
     margin-bottom: 8px;
 }
@@ -289,9 +321,9 @@
 .stat-label {
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--color-text-muted);
+    color: #BDBDBD;
 }
 
 @media (max-width: 780px) {
@@ -312,7 +344,6 @@
         row-gap: 32px;
     }
 }
-
 @media (max-width: 480px) {
     .coach-grid {
         grid-template-columns: 1fr;
