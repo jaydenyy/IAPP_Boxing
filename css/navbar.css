@@ -1,7 +1,3 @@
-/* Navbar-specific styles only.
-   The reset, body defaults, link color, and the site header bar
-   (logo + club name + tagline) now live in header.css, since they
-   were general/shared styling rather than navbar styling. */
 
 .navbar {
     background: #111111;
