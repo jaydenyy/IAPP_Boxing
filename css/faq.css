@@ -67,12 +67,11 @@
 
 .FAQ-answer {
     padding: 0px 22px 20px;
-    color: var(--color-text-muted);
     line-height: 1.6;
     font-size: 15px;
 }
 
-.FAQ-contact-cta {
+.FAQ-contact {
     text-align: center;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -81,27 +80,21 @@
     margin-top: 50px;
 }
 
-.FAQ-contact-cta h3 {
+.FAQ-contact h3 {
     color: #FFFFFF;
     margin-bottom: 8px;
 }
 
-.FAQ-contact-cta p {
-    color: var(--color-text-muted);
+.FAQ-contact p {
     margin-bottom: 18px;
 }
 
-.FAQ-contact-cta a {
+.FAQ-contact a {
     display: inline-block;
     background: var(--color-red);
     color: #FFFFFF;
-    text-decoration: none;
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: bold;
-    transition: 0.25s;
 }
 
-.FAQ-contact-cta a:hover {
-    background: var(--color-red-hover);
-}
