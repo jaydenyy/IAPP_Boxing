@@ -25,7 +25,6 @@
 
 .coach-role {
     font-size: 11px;
-    text-transform: uppercase;
     color: var(--color-red);
     margin-bottom: 10px;
 }
@@ -36,7 +35,6 @@
 }
 
 .coach-grid .card p {
-    color: var(--color-text-muted);
     font-size: 14px;
     line-height: 1.7;
 }
