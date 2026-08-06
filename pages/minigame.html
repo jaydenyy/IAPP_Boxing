@@ -9,7 +9,7 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Minigame</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -95,15 +95,52 @@
     <main class="page-container">
         <section class="minigame-intro">
             <div class="eyebrow"><span class="dot"></span>Interactive Challenge</div>
-            <h1 class="display">Punch The Targets Minigame</h1>
-            <p>Have fun while learning about boxing with our interactive minigame!</p>
+            <h1 class="display">Punch The Target</h1>
+            <p>Test your skill and reaction time by punching the target as many times as you can!</p>
         </section>
 
         <div class="minigame-container">
 
+            <div class="game-header">
+
+                <div class="stat">
+                    <span>Time</span>
+                    <h2 id="time">15</h2>
+                </div>
+
+                <div class="stat">
+                    <span>Score</span>
+                    <h2 id="score">0</h2>
+                </div>
+
+                <div class="stat">
+                    <span>Best</span>
+                    <h2 id="bestScore">0</h2>
+                </div>
+
+            </div>
+
+            <div class="game-area" id="gameArea">
+                <img src="../assets/images/minigameBag.png" class="target" id="target" alt="Target">
+
+            </div>
+
+            <div class="game-controls">
+
+                <button class="btn btn-primary" id="startBtn">
+                    Start Game
+                </button>
+
+                <button class="btn btn-secondary" id="restartBtn">
+                    Restart
+                </button>
+
+            </div>
+
         </div>
     </main>
 
+    <script src="../js/minigame.js"></script>
 
     <footer class="footer">
         <div class="footer-container">
