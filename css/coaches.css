@@ -11,6 +11,7 @@
 }
 
 .coach-grid {
+    padding: 30px 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;

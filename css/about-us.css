@@ -1,22 +1,22 @@
 
-.timeline {
+.about-us {
     padding: 70px 0px;
     border-bottom: 1px solid var(--color-border-subtle);
 }
 
-.timeline h2 {
+.about-us h2 {
     font-size: 40px;
     margin-bottom: 12px;
 }
 
-.timeline p {
-    color: var(--color-text-muted);
+.about-us p {
+    color: var
     font-size: 15px;
     line-height: 1.7;
     margin-bottom: 40px;
 }
 
-.tl-row {
+.about-row {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 30px;
@@ -24,29 +24,8 @@
     border-top: 1px solid var(--color-border-subtle);
 }
 
-.tl-year {
+.about-year {
     font-weight: 700;
     font-size: 26px;
     color: var(--color-red);
-}
-
-.tl-row h4 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.tl-row p {
-    color: var(--color-text-muted);
-    font-size: 14.5px;
-    line-height: 1.7;
-}
-
-@media (max-width: 780px) {
-    .mission {
-        grid-template-columns: 1fr;
-    }
-
-    .stats-inner {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
