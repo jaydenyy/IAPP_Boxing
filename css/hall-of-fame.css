@@ -1,113 +1,56 @@
-.hall-of-fame {
-    padding: 80px 0px;
+.hall-of-fame-intro {
+    padding: 48px 0 8px;
 }
 
-.hall-of-fame h1 {
-    font-size: 56px;
-    margin-bottom: 18px;
-}
-
-.intro {
-    max-width: 620px;
-    color: var(--color-text-muted);
-    line-height: 1.8;
-    margin-bottom: 48px;
-}
-
-.hof-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--color-border-subtle);
-    border: 1px solid var(--color-border-subtle);
-}
-
-.hof-card {
-    background: var(--color-bg);
-    display: flex;
-    min-height: 280px;
-}
-
-.hof-photo {
-    width: 220px;
-    flex-shrink: 0;
-    overflow: hidden;
-    background: var(--color-surface);
-}
-
-.hof-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s;
-    filter: grayscale(10%);
-}
-
-.hof-card:hover .hof-photo img {
-    transform: scale(1.05);
-}
-
-.hof-content {
-    padding: 30px 26px;
-    display: flex;
-    flex-direction: column;
-}
-
-.hof-year {
-    color: var(--color-red);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.hof-content h3 {
-    font-size: 24px;
-    margin-bottom: 16px;
-}
-
-.hof-content p {
+.hall-of-fame-intro p {
+    max-width: 640px;
     color: var(--color-text-muted);
     line-height: 1.7;
-    margin-bottom: 24px;
+    margin-top: 12px;
 }
 
-.hof-tags {
-    margin-top: auto;
+.hall-of-fame-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 40px 0 56px;
+}
+
+.hall-card {
+    text-align: left;
+}
+
+.hall-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.hall-card:hover img {
+    transform: scale(1.03);
+}
+
+.hall-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 18px;
 }
 
-.hof-tags span {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border-subtle);
-    color: white;
+.hall-tags span {
     padding: 8px 14px;
-    border-radius: 50px;
+    border-radius: 30px;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border-subtle);
     font-size: 12px;
     font-weight: 600;
 }
 
-@media (max-width: 900px) {
-    .hof-grid {
+@media (max-width: 700px) {
+    .hall-of-fame-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 640px) {
-    .hall-of-fame h1 {
-        font-size: 38px;
-    }
-
-    .hof-card {
-        flex-direction: column;
-    }
-
-    .hof-photo {
-        width: 100%;
-        height: 300px;
     }
 }
