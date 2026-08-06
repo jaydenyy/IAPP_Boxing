@@ -1,23 +1,27 @@
 
-.timeline {
+.rules-intro {
     padding: 70px 0px;
     border-bottom: 1px solid var(--color-border-subtle);
 }
 
-.section-tag {
-    color: var(--color-red);
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-.timeline h2 {
+.rules-intro h2 {
     font-size: 50px;
     margin: 10px 0px;
 }
 
-.timeline p {
+.rules-intro p {
     color: var(--color-text-muted);
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 30px;
+}
+.rule-video {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.video-frame video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
 }
