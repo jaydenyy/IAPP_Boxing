@@ -15,7 +15,7 @@
 }
 
 .hero p {
-    color: white;
+    color: var(--color-text);
     max-width: 480px;
     margin: 0px auto;
     font-size: 15px;
@@ -46,7 +46,7 @@
 }
 
 .quick-links a{
-    color:var(--color-text);
+    color:var(--color-text-muted);
     transition:.3s;
 }
 
