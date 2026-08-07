@@ -37,12 +37,12 @@
 
 .form-card h2{
     margin-bottom:25px;
-    color:#E1261C;
+    color:white;
 }
 
 .form-grid{
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
@@ -80,16 +80,6 @@ textarea:focus{
 
 textarea{
     resize:vertical;
-}
-
-.radio-group{
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.checkbox-group{
-    margin:25px 0px;
 }
 
 .submit-btn{
