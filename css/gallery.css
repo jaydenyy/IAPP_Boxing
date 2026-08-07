@@ -1,14 +1,13 @@
-
-
 .gallery-placeholder {
-    padding: 60px 0px;
+    padding: 48px 0px 8px;
 }
 
 .gallery-placeholder p {
-    color: var(--color-text-muted);
+    color: var(--color-text);
     margin-top: 16px;
     max-width: 620px;
 }
+
 .main-highlight{
     display:flex;
     background-color:black;
