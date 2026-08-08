@@ -40,7 +40,7 @@ function startGame(){
     gameRunning = true;
 
     score = 0;
-    time = 15;
+    time = 10;
 
     scoreText.textContent = score;
     timeText.textContent = time;
@@ -73,7 +73,7 @@ function endGame(){
         bestText.textContent = best;
     }
     alert("Game Over!\n\nScore: " + score);
-    timeText.textContent = 15;
+    timeText.textContent = 10;
 }
 
 startBtn.addEventListener("click",startGame);
