@@ -91,6 +91,92 @@
             <li><a href="../minigame.html">Minigame</a></li>
     </nav>
 
+    <main class="feedback-container">
+        <div class="feedback-image">
+            <img src="../../assets/images/feedback.jpg" alt="Feedback image">
+        </div>
+
+        <section class="feedback-form">
+            <div class="eyebrow"><span class="dot"></span>Share Your Experience</div>
+            <h1 class="display">Feedback Form</h1>
+            <p class="intro">
+                We value your feedback. Tell us about your experience with Smash Club
+                and let us know how we can improve our activities, facilities and services.
+            </p>
+
+            <form data-form-type="feedback">
+                <div class="form-card">
+                    <h2>Personal Information</h2>
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" placeholder="John Smith" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@apu.edu.my" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h2>Your Experience</h2>
+
+                    <div class="input-group">
+                        <label for="experience">How would you rate your overall experience?</label>
+
+                        <select id="experience" required>
+                            <option value="" disabled selected>Select a rating</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="poor">Poor</option>
+                            <option value="very-poor">Very Poor</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="activity">What did you enjoy most?</label>
+
+                        <select id="activity" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="training">Training Sessions</option>
+                            <option value="events">Events & Activities</option>
+                            <option value="facilities">Facilities</option>
+                            <option value="community">Club Community</option>
+                            <option value="website">Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h2>Additional Feedback</h2>
+
+                    <div class="input-group">
+                        <label for="message">Tell Us More</label>
+
+                        <textarea id="message" placeholder="Write your feedback here..." required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="suggestions">Suggestions for Improvement</label>
+
+                        <textarea id="suggestions" placeholder="How could Smash Club improve?" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Feedback
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../../js/form.js"></script>
+
     <footer class="footer">
         <div class="footer-container">
 
@@ -121,7 +207,7 @@
 
                 <div class="social-icons">
                     <a href="https://www.facebook.com/apuniversity" target="_blank" title="Facebook"><img
-                        class="social-icon" src="../../assets/icons/facebook.png" alt="Facebook"></a>
+                            class="social-icon" src="../../assets/icons/facebook.png" alt="Facebook"></a>
 
                     <a href="https://www.instagram.com/apuboxingclub/" target="_blank" title="Instagram"><img
                             class="social-icon" src="../../assets/icons/instagram.png" alt="Instagram"></a>
@@ -132,8 +218,8 @@
                     <a href="https://www.youtube.com/@apuniversity" target="_blank" title="YouTube"><img
                             class="social-icon" src="../../assets/icons/youtube.png" alt="YouTube"></a>
 
+                </div>
             </div>
-        </div>
 
         </div>
 
