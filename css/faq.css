@@ -1,30 +1,13 @@
-.faq-hero {
-    text-align: center;
-    padding: 60px 30px 40px;
-    background: var(--color-surface);
-    border-bottom: 3px solid var(--color-red);
+.FAQ-intro {
+    padding: 48px 0px;
 }
 
-.faq-hero h1 {
-    color: #FFFFFF;
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-
-.faq-hero p {
-    color: var(--color-text-muted);
-    font-size: 17px;
-    max-width: 600px;
-    margin: 0px auto;
-}
-
-.faq-container {
+.FAQ-container {
     max-width: 850px;
     margin: 0px auto;
-    padding: 50px 30px 70px;
 }
 
-.faq-category-title {
+.FAQ-category-title {
     color: var(--color-red);
     font-size: 21px;
     margin-bottom: 15px;
@@ -32,11 +15,11 @@
     letter-spacing: 0.5px;
 }
 
-.faq-category-title:first-of-type {
+.FAQ-category-title:first-of-type {
     margin-top: 0px;
 }
 
-.faq-item {
+.FAQ-item {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 8px;
@@ -45,11 +28,11 @@
     transition: 0.25s;
 }
 
-.faq-item:hover {
+.FAQ-item:hover {
     border-color: var(--color-red);
 }
 
-.faq-question {
+.FAQ-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,11 +44,11 @@
     list-style: none;
 }
 
-.faq-question::-webkit-details-marker {
+.FAQ-question::-webkit-details-marker {
     display: none;
 }
 
-.faq-question::after {
+.FAQ-question::after {
     content: "+";
     color: var(--color-red);
     font-size: 21px;
@@ -75,19 +58,18 @@
     transition: transform 0.25s;
 }
 
-.faq-item[open] .faq-question::after {
+.FAQ-item[open] .FAQ-question::after {
     content: "+";
     transform: rotate(45deg);
 }
 
-.faq-answer {
+.FAQ-answer {
     padding: 0px 22px 20px;
-    color: var(--color-text-muted);
     line-height: 1.6;
     font-size: 15px;
 }
 
-.faq-contact-cta {
+.FAQ-contact {
     text-align: center;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
@@ -96,27 +78,21 @@
     margin-top: 50px;
 }
 
-.faq-contact-cta h3 {
+.FAQ-contact h3 {
     color: #FFFFFF;
     margin-bottom: 8px;
 }
 
-.faq-contact-cta p {
-    color: var(--color-text-muted);
+.FAQ-contact p {
     margin-bottom: 18px;
 }
 
-.faq-contact-cta a {
+.FAQ-contact a {
     display: inline-block;
     background: var(--color-red);
     color: #FFFFFF;
-    text-decoration: none;
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: bold;
-    transition: 0.25s;
 }
 
-.faq-contact-cta a:hover {
-    background: var(--color-red-hover);
-}

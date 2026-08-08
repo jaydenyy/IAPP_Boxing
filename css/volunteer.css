@@ -2,13 +2,6 @@
     padding: 48px 0px 8px;
 }
 
-.volunteer-intro p {
-    color: var(--color-text-muted);
-    max-width: 640px;
-    line-height: 1.7;
-    margin-top: 12px;
-}
-
 .volunteer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,7 +30,6 @@
 }
 
 .contact-cta p {
-    color: var(--color-text-muted);
     margin-bottom: 18px;
 }
 

@@ -1,0 +1,50 @@
+.training-intro{
+    padding: 48px 0px 8px;
+}
+
+.level-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin:20px 0;
+}
+
+.level-grid .card{
+    margin-top:20px;
+}
+
+.training-calendar{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0 30px;
+    text-align:center;
+}
+
+.training-calendar th{
+    background:#E1261C;
+    color:#FFFFFF;
+    padding:12px;
+}
+
+.training-calendar td{
+    border:1px solid #333333;
+    padding:15px;
+    color:#FFFFFF;
+}
+
+.training-day{
+    background:#1A1A1A;
+    font-weight:bold;
+}
+
+.special-day{
+    background:#E1261C;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+@media (max-width:768px){
+    .level-grid{
+        grid-template-columns:1fr;
+    }
+}

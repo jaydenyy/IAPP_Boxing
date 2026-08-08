@@ -1,10 +1,5 @@
-
-
 .equipment {
-    padding: 70px 0px;
-}
-.text{
-    margin:25px 0px;
+    padding: 48px 0px;
 }
 
 .equipment-title{
@@ -13,6 +8,7 @@
 }
 
 .equipment-grid {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;

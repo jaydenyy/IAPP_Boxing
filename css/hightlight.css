@@ -1,0 +1,43 @@
+.main-highlight{
+    text-align:center;
+    color:black;
+    margin:15px 0 40px;
+}
+.main-text{
+    color: white;
+    width:40%;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.main-text p{
+    line-height:1.8;
+    color:#555;
+}
+.main-highlight video{
+    width: 60%;
+    height: 420px;
+    border: none;
+     border-radius:20px;
+}
+.video{
+    background: black;
+    border: radius 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+     border-radius:20px;
+}
+.video video{
+    width: 100%;
+    height:300px;
+    margin: auto;
+}
+.video h3{
+    margin: 2px;
+}
+.video p{
+    margin: 0 20px 20px;
+    color: #666;
+    line-height: 1.6;
+}

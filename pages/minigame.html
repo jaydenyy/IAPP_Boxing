@@ -9,30 +9,25 @@
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/activities.css">
+    <title>Minigame</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/minigame.css">
 </head>
 
 <body>
-    <header>
-        <table style="width: 100%;">
-            <tr>
-                <td style="width: 40%;">
-                    <div style="display: flex; align-items: center;">
-                        <img src="../../assets/icons/clubIcon.png"
-                            style="width: 100px; height: 100px; margin-right: 10px; margin-left: 30px;">
-                        <h1>Smash Club</h1>
-                    </div>
-                </td>
-                <td style="width: 60%;" align="center">
-                    <h2>Boxing Club of APU</h2>
-                    Be a Fighter Today! <br>
-                </td>
-            </tr>
-        </table>
+    <header class="site-header">
+        <div class="site-header-row">
+            <div class="site-brand">
+                <img src="../assets/icons/clubIcon.png" alt="Smash Club logo" class="site-brand-logo">
+                <h1>Smash Club</h1>
+            </div>
+            <div class="site-tagline">
+                <h2>Boxing Club of APU</h2>
+                <p>Be a Fighter Today!</p>
+            </div>
+        </div>
         <hr>
     </header>
 
@@ -90,85 +85,57 @@
                     <li><a href="help/contact-us.html">Contact Us</a></li>
                 </ul>
             </li>
+
+            <li><a href="../minigame.html">Minigame</a></li>
         </ul>
+
+
     </nav>
 
+    <main class="page-container">
+        <section class="minigame-intro">
+            <div class="eyebrow"><span class="dot"></span>Interactive Challenge</div>
+            <h1 class="display">Punch The Target</h1>
+            <p>Test your skill and reaction time by punching the target as many times as you can!</p>
+        </section>
 
-    <main class="container">
-
-    <h2>Club Activities</h2>
-
-    <p class="activities-description">
-        Explore the exciting activities organised by APU Boxing Club throughout the year.
-    </p>
-
-    <div class="activities-container">
-
-        <div class="activity-card">
-
-            <img src="../../assets/images/weeklytraining.jpg" alt="Weekly Training">
-
-            <div class="activity-content">
-
-                <h3>Weekly Training</h3>
-
-            <p>Improve your boxing skills, fitness and discipline
-            through regular weekly training sessions guided by
-            experienced coaches.</p>
-
-                <a href="training.html" class="activity-btn">
-                    Learn More
-                </a>
-
+        <div class="minigame-container">
+            <div class="game-header">
+                <div class="stat">
+                    <span>Time</span>
+                    <h2 id="time">15</h2>
+                </div>
+                <div class="stat">
+                    <span>Score</span>
+                    <h2 id="score">0</h2>
+                </div>
+                <div class="stat">
+                    <span>Best</span>
+                    <h2 id="bestScore">0</h2>
+                </div>
             </div>
 
-            <div class="activity-card">
-
-            <img src="../../assets/images/event.jpg" alt="Event">
-
-            <div class="activity-content">
-
-                <h3>Event</h3>
-        
-            <p>Join exciting boxing events organised throughout the year,
-            including workshops, demonstrations and club gatherings
-            for members and beginners.</p>
-
-                <a href="event.html" class="activity-btn">
-                    Learn More
-                </a>
-
+            <div class="game-area" id="gameArea">
+                <img src="../assets/images/minigameBag.png" class="target" id="target" alt="Target">
             </div>
 
-            <div class="activity-card">
-
-            <img src="../../assets/images/competition.jpg" alt="Competition">
-
-            <div class="activity-content">
-
-                <h3>Competition</h3>
-        
-            <p>Represent APU Boxing Club in friendly matches and
-            inter-university competitions to gain experience,
-            improve confidence and showcase your skills.</p>
-
-                <a href="competition.html" class="activity-btn">
-                    Learn More
-                </a>
-
+            <div class="game-controls">
+                <button class="btn btn-primary" id="startBtn">
+                    Start Game
+                </button>
+                <button class="btn btn-secondary" id="restartBtn">
+                    Restart
+                </button>
             </div>
-
 
         </div>
+    </main>
 
-
-
-</main>
+    <script src="../js/minigame.js"></script>
 
     <footer class="footer">
         <div class="footer-container">
 
-          
             <div class="footer-section">
                 <h3>Smash Club</h3>
                 <p>
@@ -177,7 +144,6 @@
                 </p>
             </div>
 
-           
             <div class="footer-section">
                 <h3>Contact Us</h3>
 
@@ -192,16 +158,23 @@
                 <p>✉ smashclub@apu.edu.my</p>
             </div>
 
-          
             <div class="footer-section">
                 <h3>Follow Us</h3>
-                
+
                 <div class="social-icons">
-                    <a href="#" target="_blank" title="Facebook"><img class="social-icon" src="../assets/icons/facebook.png" alt="Facebook"></a>
-                    <a href="#" target="_blank" title="Instagram"><img class="social-icon" src="../assets/icons/instagram.png" alt="Instagram"></a>
-                    <a href="#" target="_blank" title="TikTok"><img class="social-icon" src="../assets/icons/tiktok.png" alt="TikTok"></a>
-                    <a href="#" target="_blank" title="YouTube"><img class="social-icon" src="../assets/icons/youtube.png" alt="YouTube"></a>
-                </div>
+                    <a href="https://www.facebook.com/apuniversity" target="_blank" title="Facebook"><img
+                        class="social-icon" src="../assets/icons/facebook.png" alt="Facebook"></a>
+
+                    <a href="https://www.instagram.com/apuboxingclub/" target="_blank" title="Instagram"><img
+                            class="social-icon" src="../assets/icons/instagram.png" alt="Instagram"></a>
+
+                    <a href="https://www.tiktok.com/@apuboxingclub" target="_blank" title="TikTok"><img
+                            class="social-icon" src="../assets/icons/tiktok.png" alt="TikTok"></a>
+
+                    <a href="https://www.youtube.com/@apuniversity" target="_blank" title="YouTube"><img
+                            class="social-icon" src="../assets/icons/youtube.png" alt="YouTube"></a>
+
+            </div>
             </div>
 
         </div>
